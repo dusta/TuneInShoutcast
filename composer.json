@@ -9,5 +9,8 @@
             "email": "dusta@10g.pl"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {"TuneInShoutcast\\": "src/"}
+    }
 }
