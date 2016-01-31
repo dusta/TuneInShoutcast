@@ -8,6 +8,11 @@
             "name": "dusta",
             "email": "dusta@10g.pl"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "TuneInShoutcast\\": "src/"
+        }
+    },
     
 }
