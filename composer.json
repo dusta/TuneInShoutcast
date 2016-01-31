@@ -1,18 +1,13 @@
 {
-    "name": "dusta/tuneinshoutcast",
-    "description": "app for connect to shoutcast server",
+    "name": "dusta/tineinshoutcast",
+    "description": "App for generate file to connect shoutcast server",
+    "type": "library",
     "license": "MIT",
-    "version": "1.0",
     "authors": [
         {
             "name": "dusta",
             "email": "dusta@10g.pl"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "TuneInShoutcast\\": "src/"
-        }
-    },
-    
+    "require": {}
 }
