@@ -1,0 +1,13 @@
+{
+    "name": "dusta/tuneinshoutcast",
+    "description": "app for connect to shoutcast server",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "dusta",
+            "email": "dusta@10g.pl"
+        }
+    ]
+    
+}
