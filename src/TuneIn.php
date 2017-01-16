@@ -1,7 +1,8 @@
 <?php
 /** 
  * @author Sławomir Kaleta
- * Generowanie plików do połączenia z radiem v1.0
+ * @author Amadeusz Dzięcioł
+ * Generowanie plików do połączenia z radiem v2.0
  * 
 */
 namespace TuneInShoutcast;
@@ -37,7 +38,7 @@ class Tunein {
             echo "<asx version=\"3.0\">\n";
             echo "<title>RADIO_NAME</title>\n";
             echo "<entry>\n";
-            echo "<ref href=".$this->address." />\n";
+            echo "<ref href=\"http://".$this->address."\" />\n";
             echo "</entry>\n";
             echo "</asx>\n";;
 
@@ -50,7 +51,7 @@ class Tunein {
             echo "[playlist]\n";
             echo "NumberOfEntries=1\n";
             echo "\n";
-            echo "File0=http://".$this->address."\n";
+            echo "File1=http://".$this->address."\n";
             echo "Length0=-1\n";
             echo "\n";
             echo "Version=2\n";
@@ -58,16 +59,16 @@ class Tunein {
         }else if ($extension === 'qtl') {
             echo "<?xml version=\"1.0\"?>\n";
             echo "<?quicktime type=\"application/x-quicktime-media-link\"?>\n";
-            echo "<embed src=\"icy://".$this->address." autoplay=\"true\" />\n";
+            echo "<embed src=\"icy ://".$this->address."\" autoplay=\"true\" />\n";
            
         }else if ($extension === 'wax') {
             echo $this->address;
            
         }else if ($extension === 'ram') {
-            echo $this->address;
+            echo "http://".$this->address;
            
         }
 
     }
 
-} 
+}
