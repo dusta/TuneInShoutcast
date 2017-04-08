@@ -1,7 +1,7 @@
 {
     "name": "dusta/tineinshoutcast",
     "description": "App for generate file to connect shoutcast server",
-    "keywords": "shoutcast, file, pls, asx, m3u, pls, qtl, wax, ram",
+    "keywords": ["shoutcast", "file", "pls", "asx", "m3u", "pls", "qtl", "wax", "ram"],
     "type": "library",
     "license": "MIT",
     "authors": [
