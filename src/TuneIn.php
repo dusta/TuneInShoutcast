@@ -62,7 +62,7 @@ class Tunein {
             echo "<embed src=\"icy ://".$this->address."\" autoplay=\"true\" />\n";
            
         }else if ($extension === 'wax') {
-            echo $this->address;
+            echo "http://".$this->address;
            
         }else if ($extension === 'ram') {
             echo "http://".$this->address;
